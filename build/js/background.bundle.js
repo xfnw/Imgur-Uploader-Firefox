@@ -946,7 +946,7 @@ browser.storage.onChanged.addListener(function (changes, area) {
 });
 
 function uploadSuccessNotification() {
-    browser.notifications.create("Imgur Uploader", {
+    browser.notifications.create("ttmsh uploader", {
         "type": "basic",
         "title": "Imgur Uploader",
         "message": "Upload successful!",
@@ -956,7 +956,7 @@ function uploadSuccessNotification() {
 
 function uploadFailNotification() {
 
-    browser.notifications.create("Imgur Uploader", {
+    browser.notifications.create("ttmsh uploader", {
         "type": "basic",
         "title": "Imgur Uploader",
         "message": "Upload Failed",
@@ -965,7 +965,7 @@ function uploadFailNotification() {
 }
 
 function uploadLocalNotification() {
-    browser.notifications.create("Imgur Uploader", {
+    browser.notifications.create("ttmsh uploader", {
         "type": "basic",
         "title": "Imgur Uploader",
         "message": "Please use 'Add image' to upload local file",
@@ -976,7 +976,7 @@ function uploadLocalNotification() {
 browser.menus.create({
     id: "image-select",
     type: "normal",
-    title: "Upload to Imgur",
+    title: "Upload to ttmsh",
     contexts: ["all"],
     checked: false
 }, onCreated);
