@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "ttmsh-Uploader",
-    "version": "1.5.5b1",
+    "version": "1.5.6",
     "author": "xfnw",
     "homepage_url": "https://github.com/xfnw/Imgur-Uploader-Firefox",
     "description": "Image Upload addon for firefox but uses ttmsh",
