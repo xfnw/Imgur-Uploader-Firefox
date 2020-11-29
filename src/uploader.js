@@ -60,7 +60,7 @@ module.exports = class Uploader {
             console.log(this);
             console.log(that.uuid());
             const options = {
-                url: "https://api.imgur.com/3/image",
+                url: "https://xfnw.ttm.sh/u.php",
                 headers: {
                     authorization: "Client-ID " + that.clientID
                 },

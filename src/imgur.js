@@ -59,9 +59,9 @@ module.exports = class Uploader {
             console.log(this);
             console.log(that.uuid());
             const options = {
-                url: "https://api.imgur.com/3/image",
+                url: "https://xfnw.ttm.sh/u.php",
                 headers: {
-                    authorization: "Client-ID " + that.clientID
+                    //authorization: "Client-ID " + that.clientID
                 },
                 json: {
                     image: file
@@ -89,7 +89,7 @@ module.exports = class Uploader {
         return new Promise((resolve, reject) => {
           const options = {
               method: "delete",
-              url: "https://api.imgur.com/3/image/" + deletehash,
+              url: "https://xfnw.ttm.sh/u.php" + deletehash,
               headers: {
                   authorization: "Client-ID " + that.clientID
               }

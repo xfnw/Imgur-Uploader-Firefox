@@ -294,23 +294,19 @@ module.exports = function () {
                 console.log(_this4);
                 console.log(that.uuid());
                 var options = {
-                    url: "https://api.imgur.com/3/image",
+                    url: "https://ttm.sh",
                     headers: {
                         authorization: "Client-ID " + that.clientID
                     },
-                    json: {
-                        image: file
+                    form: {
+                        url: file
                     }
 
                 };
-                console.log(options);
+                console.log(options,request);
                 request.post(options, function (error, res, body) {
-                    console.log(body.data);
-                    if (body.data.error) {
-                        reject(body.data);
-                    } else {
-                        resolve(body.data);
-                    }
+                    console.log(res.body);
+                        resolve({link:res.body});
                 });
             });
         }
@@ -1013,6 +1009,7 @@ browser.menus.onClicked.addListener(function (info, tab) {
             uploadLocalNotification();
         } else {
             uploader.uploadToImgur(info.srcUrl).then(function (e) {
+		    console.log(e);
                 browser.storage.local.get('firefox-uploader-auto-copy').then(function (value) {
                     if (value['firefox-uploader-auto-copy'] == true) {
                         browser.tabs.query({
