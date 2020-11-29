@@ -1,11 +1,11 @@
 {
 
     "manifest_version": 2,
-    "name": "Imgur-Uploader",
-    "version": "1.5.4",
-    "author": "oberonfrog",
-    "homepage_url": "https://github.com/st900278/Imgur-Uploader-Firefox",
-    "description": "Image Upload addon for firefox",
+    "name": "ttmsh-Uploader",
+    "version": "1.5.5",
+    "author": "xfnw",
+    "homepage_url": "https://github.com/xfnw/Imgur-Uploader-Firefox",
+    "description": "Image Upload addon for firefox but uses ttmsh",
 
     "icons": {
         "48": "icons/favicon.png"
